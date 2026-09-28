@@ -1,21 +1,3 @@
-/* =========================================================
-   Fundamentos WEB - Grupo 4303A - Computación cuántica
-   Hoja de estilos compartida por index.html, tema2.html y tema3.html
-   ========================================================= */
-
-/* ---------------------------------------------------------
-   Paleta de color
-   Tema: computación cuántica. Azul profundo, violeta y un cian
-   oscuro como acento, siguiendo la orientación de la guía para
-   proyectos tecnológicos. Se evitan degradados y fondos
-   complejos para mantener la claridad del contenido académico.
-   Contraste verificado (WCAG 2.2, referencia AA = 4.5:1):
-     texto sobre fondo      14.86:1
-     texto sobre superficie 16.04:1
-     blanco sobre primary   15.89:1
-     blanco sobre secondary  8.73:1
-     accent sobre superficie 6.22:1
-   --------------------------------------------------------- */
 :root {
     --color-primary: #16213e;
     --color-secondary: #4b3f8f;
@@ -25,9 +7,9 @@
     --color-text: #1c2130;
 }
 
-/* ---------------------------------------------------------
+/*
    Base
-   --------------------------------------------------------- */
+*/
 * {
     box-sizing: border-box;
 }
@@ -45,9 +27,9 @@ img {
     height: auto;
 }
 
-/* ---------------------------------------------------------
+/*
    Encabezado y navegación
-   --------------------------------------------------------- */
+*/
 .site-header {
     background-color: var(--color-primary);
     color: #ffffff;
@@ -89,9 +71,9 @@ img {
     border-bottom: 2px solid var(--color-accent);
 }
 
-/* ---------------------------------------------------------
+/*
    Contenido principal
-   --------------------------------------------------------- */
+*/
 .site-main {
     width: min(1100px, 92%);
     margin: 2rem auto;
@@ -116,9 +98,9 @@ img {
     padding: 0 1.5rem;
 }
 
-/* ---------------------------------------------------------
+/*
    Tablas, imágenes y enlaces
-   --------------------------------------------------------- */
+*/
 table {
     width: 100%;
     border-collapse: collapse;
@@ -160,9 +142,9 @@ a:focus {
     font-weight: bold;
 }
 
-/* ---------------------------------------------------------
+/*
    Pie de página
-   --------------------------------------------------------- */
+*/
 .site-footer {
     background-color: var(--color-primary);
     color: #ffffff;
