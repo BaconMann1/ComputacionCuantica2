@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computación cuántica: principios generales</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="site-header__title">Computación cuántica: principios generales</h1>
+        <p class="site-header__intro">Qué es un computador cuántico y qué ideas de la física cuántica lo hacen distinto de uno clásico.</p>
+    </header>
+
+    <nav class="main-nav">
+        <a class="main-nav__link main-nav__link--active" href="index.html">Principios generales</a>
+        <a class="main-nav__link" href="tema2.html">Avances recientes</a>
+        <a class="main-nav__link" href="tema3.html">Aplicaciones potenciales</a>
+    </nav>
+
+    <main class="site-main">
+        <section class="topic-section">
+            <h2>¿Qué es la computación cuántica?</h2>
+            <p>La computación cuántica es un modelo de cálculo que aprovecha fenómenos de la mecánica cuántica para procesar información. Un computador clásico guarda los datos en bits, que valen 0 o 1. Uno cuántico usa cúbits (<em>qubits</em>), sistemas físicos como iones atrapados, átomos neutros o circuitos superconductores que, mientras dura el cálculo, pueden encontrarse en una combinación de los estados 0 y 1.</p>
+            <p>Esto no convierte al computador cuántico en una versión simplemente más rápida del clásico. Funciona con reglas distintas y resulta útil para problemas concretos en los que esas reglas permiten atajos. Para tareas cotidianas, como navegar por internet o escribir un documento, no ofrece ninguna ventaja.</p>
+        </section>
+
+        <section class="topic-section">
+            <h2>Conceptos fundamentales</h2>
+            <p>Cuatro ideas explican casi todo el funcionamiento de un computador cuántico. Las analogías de la tabla son aproximadas y sirven solo como punto de partida.</p>
+            <table>
+                <caption>Conceptos básicos de la computación cuántica</caption>
+                <thead>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>Qué significa</th>
+                        <th>Analogía aproximada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cúbit</td>
+                        <td>Unidad básica de información cuántica; su estado es una combinación de 0 y 1.</td>
+                        <td>Una flecha que puede apuntar en muchas direcciones, no solo hacia arriba o hacia abajo</td>
+                    </tr>
+                    <tr>
+                        <td>Superposición</td>
+                        <td>Un cúbit tiene asociada una amplitud para el 0 y otra para el 1 al mismo tiempo.</td>
+                        <td>Una moneda girando en el aire, que todavía no es cara ni sello</td>
+                    </tr>
+                    <tr>
+                        <td>Entrelazamiento</td>
+                        <td>Dos o más cúbits quedan correlacionados y ya no se describen por separado.</td>
+                        <td>Dos monedas cuyos resultados coinciden siempre al medirlas</td>
+                    </tr>
+                    <tr>
+                        <td>Interferencia</td>
+                        <td>Las amplitudes se suman o se cancelan, lo que permite reforzar respuestas correctas.</td>
+                        <td>Las ondas en el agua, que se suman o se anulan al cruzarse</td>
+                    </tr>
+                    <tr>
+                        <td>Decoherencia</td>
+                        <td>El entorno perturba al cúbit y destruye su estado cuántico.</td>
+                        <td>El ruido de una sala que impide escuchar una conversación</td>
+                    </tr>
+                </tbody>
+            </table>
+            <figure>
+                <img src="img/tema1.png" alt="Esfera de Bloch: el estado 0 en el polo superior, el estado 1 en el polo inferior y una flecha intermedia que representa una superposición" width="600">
+                <figcaption>La esfera de Bloch es una forma habitual de representar el estado de un cúbit.</figcaption>
+            </figure>
+        </section>
+
+        <section class="topic-section">
+            <h2>¿Cómo se realiza un cálculo?</h2>
+            <p>Un algoritmo cuántico no prueba todas las respuestas a la vez. Se diseña para que, mediante interferencia, la respuesta correcta tenga una probabilidad alta de aparecer al final, cuando se mide. Los algoritmos más conocidos son el de Shor (1994), que factoriza números enteros, y el de Grover (1996), que acelera búsquedas de manera cuadrática. Sus posibles usos se describen en la página de <a href="tema3.html">aplicaciones potenciales</a>.</p>
+            <ol>
+                <li>Se preparan los cúbits en un estado inicial conocido.</li>
+                <li>Se aplican compuertas cuánticas, que modifican amplitudes y entrelazan cúbits.</li>
+                <li>Se miden los cúbits, y cada medición entrega un 0 o un 1.</li>
+                <li>Se repite el proceso muchas veces y se analiza la estadística de los resultados.</li>
+            </ol>
+        </section>
+
+        <section class="topic-section">
+            <h2>Limitaciones y mitos frecuentes</h2>
+            <p>El obstáculo técnico principal es que los cúbits son muy frágiles: el ruido y la decoherencia introducen errores que crecen con la duración del cálculo. Por eso se investiga la corrección de errores, cuyos resultados más recientes se resumen en la página de <a href="tema2.html">avances recientes</a>.</p>
+            <ul>
+                <li>Mito: "un computador cuántico prueba todas las soluciones a la vez". La superposición por sí sola no basta; hace falta un algoritmo que use la interferencia.</li>
+                <li>Mito: "reemplazará a los computadores actuales". Se espera que trabaje como acelerador para tareas específicas, junto con computadores clásicos.</li>
+                <li>Mito: "más cúbits siempre significa mejor máquina". Importan también la tasa de error, la conectividad y la corrección de errores.</li>
+            </ul>
+        </section>
+
+        <section class="topic-section topic-section--sources">
+            <h2>Fuentes consultadas</h2>
+            <ul class="source-list">
+                <li><a href="https://es.wikipedia.org/wiki/Computaci%C3%B3n_cu%C3%A1ntica">Wikipedia: Computación cuántica</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Qubit">Wikipedia: Cúbit</a></li>
+                <li><a href="https://quantumai.google/">Google Quantum AI</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Fundamentos WEB - Grupo 4303A</p>
+    </footer>
+</body>
+</html>

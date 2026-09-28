@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computación cuántica: avances recientes</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="site-header__title">Computación cuántica: avances recientes</h1>
+        <p class="site-header__intro">Los hitos más importantes desde 2024: corrección de errores, ventaja cuántica verificable y los primeros cúbits lógicos a escala útil. Información consultada en septiembre de 2026.</p>
+    </header>
+
+    <nav class="main-nav">
+        <a class="main-nav__link" href="index.html">Principios generales</a>
+        <a class="main-nav__link main-nav__link--active" href="tema2.html">Avances recientes</a>
+        <a class="main-nav__link" href="tema3.html">Aplicaciones potenciales</a>
+    </nav>
+
+    <main class="site-main">
+        <section class="topic-section">
+            <h2>El reto: errores y cúbits lógicos</h2>
+            <p>Un cúbit físico es muy sensible al ruido, así que un cálculo largo acumula errores hasta volverse inútil. La solución es la corrección cuántica de errores: se reparten los datos de un único <strong>cúbit lógico</strong>, protegido, entre varios cúbits físicos, y se revisan de forma continua para detectar fallos sin destruir la información. Los conceptos básicos están en la página de <a href="index.html">principios generales</a>.</p>
+            <p>El costo de esta protección se mide como la cantidad de cúbits físicos que hacen falta por cada cúbit lógico. Durante años se estimaron cientos o miles; por eso los anuncios recientes se centran en reducir esa proporción y en demostrar que el error lógico baja cuando el sistema crece.</p>
+        </section>
+
+        <section class="topic-section">
+            <h2>Hitos recientes</h2>
+            <table>
+                <caption>Hitos recientes de la computación cuántica (2024 a 2026)</caption>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Organización</th>
+                        <th>Avance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Diciembre de 2024</td>
+                        <td>Google Quantum AI</td>
+                        <td>Con el chip superconductor Willow (105 cúbits), el error lógico bajó a medida que se agrandaba el código de corrección, un resultado "por debajo del umbral" buscado desde hace décadas.</td>
+                    </tr>
+                    <tr>
+                        <td>Octubre de 2025</td>
+                        <td>Google Quantum AI</td>
+                        <td>El algoritmo Quantum Echoes, publicado en la revista Nature, produjo un resultado verificable que Google reporta unas 13.000 veces más rápido que el mejor método clásico en un supercomputador.</td>
+                    </tr>
+                    <tr>
+                        <td>Noviembre de 2025</td>
+                        <td>Quantinuum</td>
+                        <td>El sistema Helios, de iones atrapados, ofrece 98 cúbits físicos y 48 cúbits lógicos con corrección de errores, una proporción cercana a 2 a 1, según la empresa.</td>
+                    </tr>
+                    <tr>
+                        <td>Junio de 2026</td>
+                        <td>Microsoft y Quantinuum</td>
+                        <td>Experimentos con hasta 12 cúbits lógicos que repiten la corrección de errores durante el cálculo y logran menores tasas de error lógico.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <figure>
+                <img src="img/tema2.jpg" alt="Línea de tiempo con cuatro hitos recientes: Willow en diciembre de 2024, Quantum Echoes en octubre de 2025, Helios en noviembre de 2025 y el trabajo de Microsoft y Quantinuum en junio de 2026" width="600">
+                <figcaption>Cuatro hitos recientes de la computación cuántica.</figcaption>
+            </figure>
+        </section>
+
+        <section class="topic-section">
+            <h2>Cómo interpretar estas noticias</h2>
+            <p>Muchos de estos resultados son informados por las propias empresas y se refieren a tareas muy específicas. Incluso los autores del trabajo de Microsoft y Quantinuum señalan que aún se necesitan avances en hardware, decodificación en tiempo real y métodos escalables antes de contar con computadores cuánticos grandes y prácticos. Varias empresas, entre ellas IBM y Quantinuum, han publicado hojas de ruta con cientos de cúbits lógicos hacia 2029, pero son metas anunciadas y no resultados.</p>
+            <ol>
+                <li>Distinguir entre cúbits físicos y cúbits lógicos al comparar sistemas.</li>
+                <li>Revisar si el resultado fue publicado en una revista científica o solo anunciado.</li>
+                <li>Comprobar contra qué método clásico se comparó la velocidad.</li>
+                <li>Preguntar si el problema resuelto tiene utilidad práctica, algo que se analiza en las <a href="tema3.html">aplicaciones potenciales</a>.</li>
+            </ol>
+        </section>
+
+        <section class="topic-section topic-section--sources">
+            <h2>Fuentes consultadas</h2>
+            <ul class="source-list">
+                <li><a href="https://research.google/blog/a-verifiable-quantum-advantage/">Google Research: A verifiable quantum advantage</a></li>
+                <li><a href="https://www.quantinuum.com/products-solutions/quantinuum-systems/helios">Quantinuum: Helios</a></li>
+                <li><a href="https://thequantuminsider.com/2026/06/13/microsoft-and-quantinuum-report-on-major-gains-in-quantum-error-correction/">The Quantum Insider: Microsoft and Quantinuum report on major gains in quantum error correction</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Fundamentos WEB - Grupo 4303A</p>
+    </footer>
+</body>
+</html>

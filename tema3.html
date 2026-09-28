@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computación cuántica: aplicaciones potenciales</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="site-header__title">Computación cuántica: aplicaciones potenciales</h1>
+        <p class="site-header__intro">En qué áreas podría ser útil un computador cuántico, y qué falta para que esas aplicaciones sean reales.</p>
+    </header>
+
+    <nav class="main-nav">
+        <a class="main-nav__link" href="index.html">Principios generales</a>
+        <a class="main-nav__link" href="tema2.html">Avances recientes</a>
+        <a class="main-nav__link main-nav__link--active" href="tema3.html">Aplicaciones potenciales</a>
+    </nav>
+
+    <main class="site-main">
+        <section class="topic-section">
+            <h2>¿Por qué se habla de aplicaciones "potenciales"?</h2>
+            <p>Hoy no existe un computador cuántico que resuelva un problema de utilidad práctica mejor que los mejores métodos clásicos. Lo que hay son demostraciones científicas y pruebas de concepto, como las descritas en la página de <a href="tema2.html">avances recientes</a>. Por eso las aplicaciones se consideran potenciales.</p>
+            <p>Las más prometedoras son aquellas en las que se conoce una razón teórica para esperar ventaja: la simulación de sistemas cuánticos, idea propuesta por Richard Feynman en 1981, y algunos algoritmos como el de Shor o el de Grover, explicados en los <a href="index.html">principios generales</a>.</p>
+            <ul>
+                <li>El problema debe tener una estructura que un algoritmo cuántico pueda aprovechar.</li>
+                <li>Debe existir un algoritmo con ventaja demostrada frente a los métodos clásicos.</li>
+                <li>El hardware debe tener suficientes cúbits lógicos y tasas de error bajas.</li>
+                <li>La comparación debe hacerse contra el mejor método clásico disponible, no contra uno ingenuo.</li>
+            </ul>
+        </section>
+
+        <section class="topic-section">
+            <h2>Áreas con mayor potencial</h2>
+            <table>
+                <caption>Áreas de aplicación de la computación cuántica y su estado actual</caption>
+                <thead>
+                    <tr>
+                        <th>Área</th>
+                        <th>Qué podría aportar</th>
+                        <th>Estado actual</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Química y materiales</td>
+                        <td>Simular moléculas y materiales con precisión, útil para baterías, catalizadores y medicamentos.</td>
+                        <td>Pruebas de concepto: en 2025 Google estudió dos moléculas con Quantum Echoes y comparó con datos de resonancia magnética nuclear.</td>
+                    </tr>
+                    <tr>
+                        <td>Criptografía</td>
+                        <td>Romper cifrados como RSA mediante el algoritmo de Shor y, a la vez, motivar nuevos sistemas de protección.</td>
+                        <td>Ninguna máquina actual puede hacerlo; las estimaciones recientes hablan de alrededor de un millón de cúbits físicos.</td>
+                    </tr>
+                    <tr>
+                        <td>Optimización y finanzas</td>
+                        <td>Mejorar rutas, horarios logísticos o composición de portafolios.</td>
+                        <td>Se exploran pilotos, pero no hay ventaja demostrada frente a los mejores métodos clásicos.</td>
+                    </tr>
+                    <tr>
+                        <td>Aprendizaje automático</td>
+                        <td>Acelerar ciertas tareas de análisis de datos.</td>
+                        <td>Investigación temprana; muchos resultados teóricos dependen de supuestos difíciles de cumplir.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="topic-section">
+            <h2>Criptografía: una amenaza que ya se atiende</h2>
+            <p>El algoritmo de Shor permitiría, con una máquina suficientemente grande, descifrar los sistemas de clave pública que hoy protegen la banca en línea y las comunicaciones. Como existe el riesgo de que alguien almacene datos cifrados hoy para descifrarlos en el futuro, la respuesta ya empezó: en agosto de 2024 el NIST publicó tres estándares de criptografía poscuántica (FIPS 203, 204 y 205), diseñados para resistir ataques de computadores cuánticos.</p>
+            <ul>
+                <li>Hacer un inventario de dónde se usa cifrado de clave pública.</li>
+                <li>Priorizar los datos que deben mantenerse secretos durante muchos años.</li>
+                <li>Planear la migración hacia algoritmos poscuánticos estandarizados.</li>
+            </ul>
+        </section>
+
+        <section class="topic-section">
+            <h2>Qué se puede esperar</h2>
+            <p>Lo más probable es que los computadores cuánticos sean aceleradores especializados, conectados a computadores clásicos y ofrecidos como servicio en la nube, y no equipos de uso personal. Su impacto dependerá de que los avances en corrección de errores descritos en la página de <a href="tema2.html">avances recientes</a> permitan ejecutar algoritmos largos y confiables.</p>
+            <figure>
+                <img src="img/tema3.jpeg" alt="Diagrama con un computador cuántico en el centro conectado a cuatro áreas de aplicación: criptografía, química y materiales, optimización y aprendizaje automático" width="600">
+                <figcaption>Áreas en las que se espera que la computación cuántica tenga impacto.</figcaption>
+            </figure>
+        </section>
+
+        <section class="topic-section topic-section--sources">
+            <h2>Fuentes consultadas</h2>
+            <ul class="source-list">
+                <li><a href="https://csrc.nist.gov/news/2024/postquantum-cryptography-fips-approved">NIST: Post-Quantum Cryptography FIPS Approved</a></li>
+                <li><a href="https://blog.google/innovation-and-ai/technology/research/quantum-echoes-willow-verifiable-quantum-advantage/">Google: Quantum Echoes y ventaja cuántica verificable</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Algoritmo_de_Shor">Wikipedia: Algoritmo de Shor</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Fundamentos WEB - Grupo 4303A</p>
+    </footer>
+</body>
+</html>
